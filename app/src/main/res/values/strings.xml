@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">App Marketing Mindset</string>
+    <string name="welcome_string">That is great that you dicided to take an Android Basics Nanodegree by Google course! All this technical work is really great and astonishing!
+        But do you know, what to do next when the app is almost finished? What nessesary steps to take and how to make people know about your app? This app gives you
+        some basic steps to take after your app is finished. Are you ready?</string>
+
+    <string name="essential_why">Why should the App exist? Clearly understand the need for the App - Does it stand on its own or is it a companion to an existing product?</string>
+
+    <string name="essential_value">Provide Value. An average smartphone user spends 80% of the time he spends with smartphone on the Top 3 Apps of his choice.
+        If you need the user to come back to your App, you need to give him a reason to do so. Showcase the value the user gets by using your App.</string>
+
+    <string name="essential_marketing">Don’t release an app if you don’t plan to market it effectively. Merely publishing in app store would not garner your apps huge downloads.
+        Get familiar with the app discovery paths. Do not neglect the app’s titles and descriptions. They greatly help in App Store Optimization (ASO).
+        Although app stores are the primary source of discovery.</string>
+
+    <string name="essential_create_great">Create a great app. The most important thing is creating an app that is useful to your target audience.
+        It should have minimal bugs and glitches at launch. It should improve as time passes based on reviews and other factors.</string>
+
+    <string name="category_essential">Essential questions</string>
+
+    <string name="category_lifecycle">Common App’s lifecycle</string>
+
+    <string name="category_develop">Develop stage</string>
+
+    <string name="category_launch">Launch stage</string>
+
+    <string name="category_engage">Engage stage</string>
+
+    <string name="category_grow">Develop stage</string>
+
+    <string name="category_earn">Launch stage</string>
+
+    <string name="category_quiz">Quiz</string>
+
+
+</resources>

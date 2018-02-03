@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.egrishin.appmarketingtips.Table_of_contents"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/essential"
+        style="@style/CategoryStyle"
+        android:text="@string/category_essential"
+        android:onClick="infoEssential"/>
+
+    <TextView
+        android:id="@+id/lifecycle"
+        style="@style/CategoryStyle"
+        android:text="@string/category_lifecycle" />
+
+    <TextView
+        android:id="@+id/develop"
+        style="@style/CategoryStyle"
+        android:text="@string/category_develop" />
+
+    <TextView
+        android:id="@+id/launch"
+        style="@style/CategoryStyle"
+        android:text="@string/category_launch" />
+
+    <TextView
+        android:id="@+id/engage"
+        style="@style/CategoryStyle"
+        android:text="@string/category_engage"
+        android:onClick="openNumbersList"/>
+
+    <TextView
+        android:id="@+id/grow"
+        style="@style/CategoryStyle"
+        android:text="@string/category_grow" />
+
+    <TextView
+        android:id="@+id/earn"
+        style="@style/CategoryStyle"
+        android:text="@string/category_earn" />
+
+    <TextView
+        android:id="@+id/quiz"
+        style="@style/CategoryStyle"
+        android:textAllCaps="true"
+        android:text="@string/category_quiz" />
+
+</LinearLayout>

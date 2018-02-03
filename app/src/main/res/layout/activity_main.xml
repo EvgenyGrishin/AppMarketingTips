@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.egrishin.appmarketingtips.MainActivity"
+    android:orientation="vertical">
+
+    <!--This is an initial screen of the app, welcome notes.-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_string"
+        />
+    <Button
+        android:id="@+id/to_contents"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:text="I am ready, let's go!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="tableOfContents"
+        />
+
+</RelativeLayout>
