@@ -12,8 +12,4 @@ public class EssentialQuestions extends AppCompatActivity {
         setContentView(R.layout.activity_essential_questions);
     }
 
-    public void tableOfContents(View view) {
-        setContentView(R.layout.activity_table_of_contents);
-
-    }
 }

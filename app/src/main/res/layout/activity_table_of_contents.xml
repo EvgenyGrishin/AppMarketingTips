@@ -8,46 +8,53 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/essential"
+        android:id="@+id/essential_questions"
         style="@style/CategoryStyle"
         android:text="@string/category_essential"
-        android:onClick="infoEssential"/>
+        android:onClick="stageEssential"/>
 
     <TextView
         android:id="@+id/lifecycle"
         style="@style/CategoryStyle"
-        android:text="@string/category_lifecycle" />
+        android:text="@string/category_lifecycle"
+        android:onClick="stageLifecycle"/>
 
     <TextView
         android:id="@+id/develop"
         style="@style/CategoryStyle"
-        android:text="@string/category_develop" />
+        android:text="@string/category_develop"
+        android:onClick="stageDevelop"/>
 
     <TextView
         android:id="@+id/launch"
         style="@style/CategoryStyle"
-        android:text="@string/category_launch" />
+        android:text="@string/category_launch"
+        android:onClick="stageLaunch"/>
 
     <TextView
         android:id="@+id/engage"
         style="@style/CategoryStyle"
         android:text="@string/category_engage"
-        android:onClick="openNumbersList"/>
+        android:onClick="stageEngage"
+        />
 
     <TextView
         android:id="@+id/grow"
         style="@style/CategoryStyle"
-        android:text="@string/category_grow" />
+        android:text="@string/category_grow"
+        android:onClick="stageGrow"/>
 
     <TextView
         android:id="@+id/earn"
         style="@style/CategoryStyle"
-        android:text="@string/category_earn" />
+        android:text="@string/category_earn"
+        android:onClick="stageEarn"/>
 
     <TextView
         android:id="@+id/quiz"
         style="@style/CategoryStyle"
         android:textAllCaps="true"
-        android:text="@string/category_quiz" />
+        android:text="@string/category_quiz"
+        android:onClick="start_quiz"/>
 
 </LinearLayout>
