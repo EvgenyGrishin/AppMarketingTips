@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.egrishin.appmarketingtips.GrowStage">
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    android:textSize="24sp"
+    tools:context="com.egrishin.appmarketingtips.EssentialQuestions">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Grow stage"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="14dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/stage_grow_adwords"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/stage_grow_aquisition"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/stage_grow_reviews"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/stage_grow_score_listing"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/stage_grow_goglobal"
+        android:paddingBottom="8dp"
+        android:textSize="14sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/to_contents"
+            android:layout_width="256dp"
+            android:layout_height="58dp"
+            android:text="Ok, that was a hard way. Now where is the money?"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:onClick="tableOfContents"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

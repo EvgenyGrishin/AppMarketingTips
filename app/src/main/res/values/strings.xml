@@ -34,6 +34,63 @@
 
     <string name="stage_develop_permissions">Request permissions at runtime appropriately. Make sure you request permissions at the right time and appropriately educate and inform your users about the need for permission requests.</string>
 
+    /* Strings for the launch stage */
+
+    <string name="stage_launch_checklist">Check out a Google Developer’s checklist. It brings together the processes you should follow to ensure your app is launched successfully. The tasks are numbered to give you an idea of the normal sequence in which they would be actioned.
+        The list can be found on https://developer.android.com/distribute/best-practices/launch/launch-checklist.html</string>
+
+    <string name="stage_launch_prelaunch">Remember to use pre-launch and crash reports to improve your app. Pre-launch reports use automated tests on real devices to identify layout issues, provide crash diagnostics, locate security vulnerabilities, identify performance issues, and more.
+        You can then run custom tests on Firebase Test Lab and use the crash and ANR reports to search more deeply for quality issues.</string>
+
+    <string name="stage_launch_beta_tests">Run Beta Tests. Use the Google Play Console to release early versions of your app to trusted users for alpha and beta testing.
+        This gives you the opportunity to fix any technical or user experience issues before you release it widely.</string>
+
+    <string name="stage_launch_localized_tests">Remember to test localized app in each language.Even the best translator can miss language nuances that users will identify quickly once your app has been released.
+        By testing your localizations, you’ll avoid language or content slip-ups that could be detrimental to your app’s reception.</string>
+
+
+
+    /* Strings for the engage stage */
+
+    <string name="stage_engage_google_search">Drive engagement through links and Google search results. Enable Google to crawl your Android app content and present your app through Google Search results,
+        when your app content corresponds to a web page that you own. Use app links to open your app automatically, eliminating the need for users to choose how they want Android to handle your links.</string>
+
+    <string name="stage_engage_adwords">Engage new users and Re-engage users who have your app installed with targeted AdWords campaigns. Users do not always remember to open the apps they have installed, especially if they have installed a lot of apps.
+        With mobile app engagement campaigns you can re-engage with users from Search or target specific audiences with Display Networks ads.</string>
+
+    <string name="stage_engage_play_optimization">Android Play Optimization. It is something you must do in order to succeed. It’s about improving your visibility in app store and improving conversion from your app page.</string>
+
+    <string name="stage_engage_review">Get yourself reviewed. Try to get positive app reviews from websites. If you have good app many websites will do it for free. If it’s not an app that requires a review, try to get into top 10 new apps, apps of week etc published by these sites.</string>
+
+    <string name="stage_engage_retention">Focus on retention. You can get millions of downloads but may not have many active users.
+        Make sure once you have a decent amount of downloads, you must focus on retention more than downloads. Retention should be a part of your process from the beginning.</string>
+
+    /* Strings for the grow stage */
+
+    <string name="stage_grow_adwords">Increase downloads with universal app campaigns.
+        AdWords promotes your app to interested users where they spend time on phones and tablets—with app install ads on Google Play, Google Search, YouTube, and within apps and across the web.</string>
+
+    <string name="stage_grow_goglobal">Go global and successfully grow valuable audiences in new countries. But not all apps and games have the same appeal globally.
+        When launching outside your home market, conduct thorough research to understand the local audience and take their preferences and expectations into account.</string>
+
+    <string name="stage_grow_aquisition">Understand where your valuable users come from so you can optimize your marketing. The User Acquisition tab in the Play Console provides detailed information on how users are finding and acquiring your app. It also reports on how users go on to buy your in-app products — all without you having to set up and create complex reporting.</string>
+
+    <string name="stage_grow_score_listing">Convert more visits to installs with store listing experiments. Get more installs by using store listing experiments to find the best app icon, images, video, and descriptions for your app on Google Play.</string>
+
+    <string name="stage_grow_reviews">Analyze user reviews. View the top trends and issues that users mention in your app reviews to understand what changes to your app users want most.</string>
+
+    /* Strings for the earn stage */
+
+    <string name="stage_earn_model">Choose the right monetization model. To maximize your revenue, consider multiple monetization models for your app.
+        Different audiences have different preferences for paid apps, in-app purchases, subscriptions, ads, and e-commerce.</string>
+
+    <string name="stage_earn_inappbilling">Sell digital purchases with Play In-app Billing. When you use Google Play In-app Billing to sell items, Google Play handles the checkout details so your app never has to process financial transactions.
+        Your app will use the same checkout flow which is used for content purchases on Google Play, so users will get a familiar, reliable, and secure experience.</string>
+
+    <string name="stage_earn_conversions">Improve Conversions using Google Analytics for Firebase. Use unlimited reporting for up to 500 distinct events and create custom audiences with Google Analytics for Firebase to understand how your users behave. From the data, you can get detailed insights into app use and user engagement.
+        These insights can help you improve conversions by making informed decisions regarding app marketing and performance optimizations.</string>
+
+    <string name="stage_earn_androidpay">Enable simple, secure checkout with Android Pay. Eliminate credit card and shipping forms from your app with Android Pay and drive higher conversions on purchases of physical goods and services.</string>
 
     /* Category names for a table of contents */
 
@@ -47,9 +104,9 @@
 
     <string name="category_engage">Engage stage</string>
 
-    <string name="category_grow">Develop stage</string>
+    <string name="category_grow">Grow stage</string>
 
-    <string name="category_earn">Launch stage</string>
+    <string name="category_earn">Earn stage</string>
 
     <string name="category_quiz">Quiz</string>
 
