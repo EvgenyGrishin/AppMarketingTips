@@ -92,7 +92,7 @@
 
     <string name="stage_earn_androidpay">Enable simple, secure checkout with Android Pay. Eliminate credit card and shipping forms from your app with Android Pay and drive higher conversions on purchases of physical goods and services.</string>
 
-    /* Category names for a table of contents */
+    /* Category names for a table of contents and picture screen*/
 
     <string name="category_essential">Essential questions</string>
 
@@ -110,5 +110,16 @@
 
     <string name="category_quiz">Quiz</string>
 
+    /* Stages descriptions for picture screen */
+
+    <string name="pic_develop">Build and test high-quality app</string>
+
+    <string name="pic_launch">Publish with confidence on Google Play</string>
+
+    <string name="pic_engage">Engage and retain your users</string>
+
+    <string name="pic_grow">Grow your audience and your business</string>
+
+    <string name="pic_earn">Monetize your app and earn more revenue</string>
 
 </resources>
