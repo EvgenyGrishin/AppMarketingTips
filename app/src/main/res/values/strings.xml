@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">App Marketing Mindset</string>
+    <string name="app_name">App Marketing Tips</string>
+
     <string name="welcome_string">That is great that you dicided to take an Android Basics Nanodegree by Google course! All this technical work is really great and astonishing!
         But do you know, what to do next when the app is almost finished? What nessesary steps to take and how to make people know about your app? This app gives you
         some basic steps to take after your app is finished. Are you ready?</string>
+
+    /* Strings for the essential questions */
 
     <string name="essential_why">Why should the App exist? Clearly understand the need for the App - Does it stand on its own or is it a companion to an existing product?</string>
 
@@ -15,6 +18,24 @@
 
     <string name="essential_create_great">Create a great app. The most important thing is creating an app that is useful to your target audience.
         It should have minimal bugs and glitches at launch. It should improve as time passes based on reviews and other factors.</string>
+
+    /* Strings for the develop stage */
+
+    <string name="stage_develop_tailoring">Users interact with their devices in different ways and contexts. A great app designed for smartphones,
+        for example, won’t provide a great experience on Android Wear. Tailoring your app for each form factor will provide a better user experience.</string>
+
+    <string name="stage_develop_undeveloped_markets">A majority of users in these markets face constraints not commonly seen in developed markets, such as:
+        limited access to data connections and high costs when they are available, devices with reduced memory and smaller screen sizes, and prepaid accounts
+        topped up as means permit. To address the needs of these users, apps need to be aligned closely with local commerce, culture, and language —
+        more so than might be necessary when targeting developed markets.</string>
+
+    <string name="stage_develop_play_policy">Make sure you’re familiar with Google Play policies and guidelines, and apply them to your apps.
+        Google Play guidelines include basic test procedures, so you can focus on devising and running tests for your app’s unique features.</string>
+
+    <string name="stage_develop_permissions">Request permissions at runtime appropriately. Make sure you request permissions at the right time and appropriately educate and inform your users about the need for permission requests.</string>
+
+
+    /* Category names for a table of contents */
 
     <string name="category_essential">Essential questions</string>
 
