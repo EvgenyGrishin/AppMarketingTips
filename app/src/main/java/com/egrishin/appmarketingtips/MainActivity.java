@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /*Navigation links*/
+
     public void stageEssential(View view) {
         setContentView(R.layout.activity_essential_questions);
     }
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
     }
 
+    /*Returns score after question 1 radio buttons selected*/
+
     public int scanRadioGroup1() {
         RadioGroup radioGroup_1 = (RadioGroup) findViewById(R.id.q1_radio_button_group);
         int n = radioGroup_1.getCheckedRadioButtonId();
@@ -67,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
 
         return s;
     }
+
+    /*Returns score after question 2 radio buttons selected*/
 
     public int scanRadioGroup2() {
         RadioGroup radioGroup_2 = (RadioGroup) findViewById(R.id.q2_radio_button_group);
@@ -84,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
         return s;
     }
 
+    /*Returns score after question 3 radio buttons selected*/
+
     public int scanRadioGroup3() {
         RadioGroup radioGroup_3 = (RadioGroup) findViewById(R.id.q3_radio_button_group);
         int n = radioGroup_3.getCheckedRadioButtonId();
@@ -99,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
 
         return s;
     }
+
+    /*Returns score after question 4 radio buttons selected*/
 
     public int scanRadioGroup4() {
         RadioGroup radioGroup_4 = (RadioGroup) findViewById(R.id.q4_radio_button_group);
@@ -116,6 +126,8 @@ public class MainActivity extends AppCompatActivity {
         return s;
     }
 
+    /*Returns score after question 5 radio buttons selected*/
+
     public int scanRadioGroup5() {
         RadioGroup radioGroup_5 = (RadioGroup) findViewById(R.id.q5_radio_button_group);
         int n = radioGroup_5.getCheckedRadioButtonId();
@@ -131,6 +143,8 @@ public class MainActivity extends AppCompatActivity {
 
         return s;
     }
+
+    /*Returns score after question 6 text is entered*/
 
     public int scanEditText(){
         int s = 0;
@@ -149,11 +163,15 @@ public class MainActivity extends AppCompatActivity {
         return s;
     }
 
+    /*Reads the entered text for EditView*/
+
     private String q6aEntered(){
         EditText enteredName = (EditText) findViewById(R.id.q6_line_view);
         String n = enteredName.getText().toString();
         return n;
     }
+
+    /*Checks question 7 checkboxes*/
 
     private boolean q7a1CheckboxStatus () {
         CheckBox q7a1Checkbox = (CheckBox) findViewById(R.id.q7a1_checkbox);
@@ -175,6 +193,9 @@ public class MainActivity extends AppCompatActivity {
         boolean i = q7a4Checkbox.isChecked();
         return i;
     }
+
+    /*Returns score after question 7 checkboxes selected*/
+
     public int scanCheckBox(){
         int s = 0;
         if (q7a2CheckboxStatus() == true && q7a3CheckboxStatus() == true && q7a1CheckboxStatus() != true && q7a4CheckboxStatus() != true){
@@ -185,8 +206,9 @@ public class MainActivity extends AppCompatActivity {
             s = 0;
         }
     return s;
-
 }
+
+/*Score counter, total value*/
 
     public int scoreCount(){
         int m = 0;
@@ -199,6 +221,8 @@ public class MainActivity extends AppCompatActivity {
         m = m + scanCheckBox();
         return m;
     }
+
+    /*Displays toast*/
 
     public void displayCheckedButtonId_q1(View view) {
         score = scoreCount();

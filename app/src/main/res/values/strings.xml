@@ -5,7 +5,7 @@
 
     <string name="welcome_string2">All this technical work is really great and astonishing!
         But do you know, what to do next when the app is almost finished? What nessesary steps to take and how to make people know about your app? This app gives you
-        some basic steps to take after your app is finished.</string>
+        some basic steps to take after your work is finished.</string>
 
     <string name="welcome_string3">Are you ready?</string>
 
@@ -146,7 +146,7 @@
     <string name="q3a2">OS from v.5.0 to v.8.1</string>
     <string name="q3a3">Older models with OS v. 4.x. They are old and cheap to buy, it is a major part of running devices.</string>
 
-    <string name="quizQuestion4">Your app is ready. You ran all the tests on your phone and the app is runs perfect. Which devices can target while launching the app in this case?</string>
+    <string name="quizQuestion4">Your app is ready. You ran all the tests on your smartphone and the app is runs perfect. Which devices can target while launching the app in this case?</string>
     <string name="q4a1">Android Phones</string>
     <string name="q4a2">Android Wear</string>
     <string name="q4a3">Android Auto</string>

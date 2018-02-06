@@ -266,14 +266,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:elevation="4dp"
-        android:background="@android:color/white">
+        android:background="@android:color/white"
+        android:onClick="stageEarn">
 
         <ImageView
             android:layout_width="96sp"
             android:layout_height="96sp"
             android:scaleType="centerCrop"
-            android:src="@drawable/earn"
-            android:onClick="stageEarn"/>
+            android:src="@drawable/earn"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -335,10 +335,12 @@
 
             <TextView
                 style="@style/PicAndTextStyle"
-                android:textStyle="bold"
                 android:text="Quiz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:textAllCaps="true"
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
