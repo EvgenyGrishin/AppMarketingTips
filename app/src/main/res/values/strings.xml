@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">App Marketing Tips</string>
 
-    <string name="welcome_string">That is great that you dicided to take an Android Basics Nanodegree by Google course! All this technical work is really great and astonishing!
+    <string name="welcome_string1">That is great that you dicided to take an Android Basics Nanodegree by Google course! </string>
+
+    <string name="welcome_string2">All this technical work is really great and astonishing!
         But do you know, what to do next when the app is almost finished? What nessesary steps to take and how to make people know about your app? This app gives you
-        some basic steps to take after your app is finished. Are you ready?</string>
+        some basic steps to take after your app is finished.</string>
+
+    <string name="welcome_string3">Are you ready?</string>
+
 
     /* Strings for the essential questions */
 
@@ -131,9 +136,34 @@
     <string name="q1a2">Get positive reviews from sites and blogs.</string>
     <string name="q1a3">Check the app via Google Developer’s checklist.</string>
 
-    <string name="quizQuestion2">You feel ready to launch your app, but you already keep in mind some changes you wish to implement in newer versions. Some of these new features will require extra app permissions, compared to the current version. What will you do with app permissions in the current, ready for launch version?</string>
+    <string name="quizQuestion2">You’ve coded a super-cool-featured app for phones. You think you should target global markets. Which versions of Android platform should target your app?</string>
     <string name="q2a1">Add extra permissions to the current version. Anyway you’ll need them.</string>
     <string name="q2a2">You’ll ask the user to accept all permissions, closing unrequired with each version.</string>
     <string name="q2a3">You’ll leave just a few required for the current release permissions.</string>
+
+    <string name="quizQuestion3">What is #1 thing to do, when you developed an app and plan to publish it in Google Play?</string>
+    <string name="q3a1">Only best phones OS from v.7.1 to v.8.1. Their owners are most progressive.</string>
+    <string name="q3a2">OS from v.5.0 to v.8.1</string>
+    <string name="q3a3">Older models with OS v. 4.x. They are old and cheap to buy, it is a major part of running devices.</string>
+
+    <string name="quizQuestion4">Your app is ready. You ran all the tests on your phone and the app is runs perfect. Which devices can target while launching the app in this case?</string>
+    <string name="q4a1">Android Phones</string>
+    <string name="q4a2">Android Wear</string>
+    <string name="q4a3">Android Auto</string>
+
+    <string name="quizQuestion5">What is the name of the tool that can help you to understand where your valuable users come from so you can optimize your marketing.</string>
+    <string name="q5a1">Android Studio</string>
+    <string name="q5a2">AdWords</string>
+    <string name="q5a3">Android Pay</string>
+    <string name="q5a4">Google Play Console</string>
+
+    <string name="quizQuestion6">What is the name of Google service that could be used for higher conversions on purchases of physical goods and services from your app?</string>
+
+    <string name="quizQuestion7">You’ve launched your app. Congratulations! What are two most important way of engaging new users of listed?</string>
+    <string name="q7a1">High-quality localizations</string>
+    <string name="q7a2">Google Search optimization</string>
+    <string name="q7a3">Google Play optimization</string>
+    <string name="q7a4">A right-chosen monetization model</string>
+
 
 </resources>

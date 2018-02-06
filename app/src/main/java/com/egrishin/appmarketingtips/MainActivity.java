@@ -3,6 +3,8 @@ package com.egrishin.appmarketingtips;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -22,19 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_essential_questions);
     }
 
-   /* *//*public void markComplete(View view){
-        TextView completeText = (TextView) findViewById(R.id.markComplete);
-        completeText.setText("Completed");*//*
-    }*/
-
     public void stageLifecycle(View view) {
-        markComplete(View);
-        setContentView(R.layout.activity_common_lifecycle);
-    }
-
-    public void markComplete(View view){
-        TextView completeText = (TextView) findViewById(R.id.markComplete);
-        completeText.setText("Completed");
+                setContentView(R.layout.activity_common_lifecycle);
     }
 
     public void stageDevelop(View view) {
@@ -93,17 +84,135 @@ public class MainActivity extends AppCompatActivity {
         return s;
     }
 
+    public int scanRadioGroup3() {
+        RadioGroup radioGroup_3 = (RadioGroup) findViewById(R.id.q3_radio_button_group);
+        int n = radioGroup_3.getCheckedRadioButtonId();
+        int s = 0;
+
+        if (n == R.id.q3a2_radio_button) {
+            s = s + 10;
+        }
+
+        else {
+            s = 0;
+        }
+
+        return s;
+    }
+
+    public int scanRadioGroup4() {
+        RadioGroup radioGroup_4 = (RadioGroup) findViewById(R.id.q4_radio_button_group);
+        int n = radioGroup_4.getCheckedRadioButtonId();
+        int s = 0;
+
+        if (n == R.id.q4a1_radio_button) {
+            s = s + 10;
+        }
+
+        else {
+            s = 0;
+        }
+
+        return s;
+    }
+
+    public int scanRadioGroup5() {
+        RadioGroup radioGroup_5 = (RadioGroup) findViewById(R.id.q5_radio_button_group);
+        int n = radioGroup_5.getCheckedRadioButtonId();
+        int s = 0;
+
+        if (n == R.id.q5a4_radio_button) {
+            s = s + 10;
+        }
+
+        else {
+            s = 0;
+        }
+
+        return s;
+    }
+
+    public int scanEditText(){
+        int s = 0;
+        String x;
+        x = q6aEntered();
+        boolean check = false;
+
+        if ((check = "Android Pay".equals(x)) || (check = "ANDROID PAY".equals(x)) || (check = "Android pay".equals(x)) || (check = "android pay".equals(x))) {
+            s = s + 10;
+        }
+
+        else {
+            s = 0;
+        }
+
+        return s;
+    }
+
+    private String q6aEntered(){
+        EditText enteredName = (EditText) findViewById(R.id.q6_line_view);
+        String n = enteredName.getText().toString();
+        return n;
+    }
+
+    private boolean q7a1CheckboxStatus () {
+        CheckBox q7a1Checkbox = (CheckBox) findViewById(R.id.q7a1_checkbox);
+        boolean i = q7a1Checkbox.isChecked();
+        return i;
+    }
+    private boolean q7a2CheckboxStatus () {
+        CheckBox q7a2Checkbox = (CheckBox) findViewById(R.id.q7a2_checkbox);
+        boolean i = q7a2Checkbox.isChecked();
+        return i;
+    }
+    private boolean q7a3CheckboxStatus () {
+        CheckBox q7a3Checkbox = (CheckBox) findViewById(R.id.q7a3_checkbox);
+        boolean i = q7a3Checkbox.isChecked();
+        return i;
+    }
+    private boolean q7a4CheckboxStatus () {
+        CheckBox q7a4Checkbox = (CheckBox) findViewById(R.id.q7a4_checkbox);
+        boolean i = q7a4Checkbox.isChecked();
+        return i;
+    }
+    public int scanCheckBox(){
+        int s = 0;
+        if (q7a2CheckboxStatus() == true && q7a3CheckboxStatus() == true && q7a1CheckboxStatus() != true && q7a4CheckboxStatus() != true){
+            s = s + 10;
+        }
+
+        else {
+            s = 0;
+        }
+    return s;
+
+}
+
     public int scoreCount(){
         int m = 0;
         m = scanRadioGroup1();
         m = m + scanRadioGroup2();
+        m = m + scanRadioGroup3();
+        m = m + scanRadioGroup4();
+        m = m + scanRadioGroup5();
+        m = m + scanEditText();
+        m = m + scanCheckBox();
         return m;
     }
 
     public void displayCheckedButtonId_q1(View view) {
-        TextView checkedButtonId = (TextView) findViewById(R.id.q1textView);
         score = scoreCount();
-        checkedButtonId.setText("" + score);
+
+        if (score == 0){
+            Toast.makeText(this, "Oh, nothing right...", Toast.LENGTH_LONG).show();
+        }
+        if (score == 70){
+            Toast.makeText(this, "Whoa, 70 of 70!!!", Toast.LENGTH_LONG).show();
+        }
+        else {
+            Toast.makeText(this, "Your score is " + score + " of 70", Toast.LENGTH_LONG).show();
+        }
+
     }
 
 

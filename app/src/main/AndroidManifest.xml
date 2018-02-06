@@ -24,7 +24,6 @@
         <activity android:name=".EngageStage" />
         <activity android:name=".GrowStage" />
         <activity android:name=".EarnStage" />
-        <activity android:name=".FinalWord" />
         <activity android:name=".Quiz"></activity>
     </application>
 
