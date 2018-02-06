@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#eeeeee"
     tools:context="com.egrishin.appmarketingtips.CommonLifecycle">
 
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/essential_questions"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        android:onClick="stageEssential">
 
         <ImageView
-            android:id="@+id/photo_develop"
-            android:layout_width="96sp"
-            android:layout_height="96sp"
+
+            android:layout_width="96dp"
+            android:layout_height="96dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/develop"/>
+            android:src="@drawable/thinking"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,13 +34,74 @@
 
             <TextView
                 style="@style/PicAndTextStyle"
+                android:textStyle="bold"
+                android:text="@string/category_essential"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                style="@style/PicAndTextStyle"
+                android:text="The questions to start with"
+                />
+
+            <TextView
+                android:id="@+id/markComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#f44336"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:rotation="90"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/develop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        android:onClick="stageDevelop">
+
+        <ImageView
+            android:id="@+id/photo_develop"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/develop"/>
+
+        <LinearLayout
+            android:id="@+id/PicsDevelopText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/PicAndTextStyle"
+                android:textStyle="bold"
                 android:text="@string/category_develop"
                 android:textAllCaps="true"
                 />
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                style="@style/PicAndTextStyle"
                 android:text="@string/pic_develop"
                 />
 
@@ -46,17 +114,20 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:src="@drawable/ic_arrow"
-            android:rotation="90"/>
+            style="@style/ArrowStyle"
+            />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/launch"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        android:onClick="stageLaunch">
 
         <ImageView
             android:id="@+id/photo_launch"
@@ -71,17 +142,14 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                style="@style/PicAndTextStyle"
                 android:text="@string/category_launch"
                 android:textAllCaps="true"
-                />
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="@string/pic_launch"
-                />
+                style="@style/PicAndTextStyle"
+                android:text="@string/pic_launch" />
 
         </LinearLayout>
 
@@ -92,17 +160,19 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:src="@drawable/ic_arrow"
-            android:rotation="90"/>
+            style="@style/ArrowStyle"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/engage"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        android:onClick="stageEngage">
 
         <ImageView
             android:id="@+id/photo_engage"
@@ -117,15 +187,14 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                style="@style/PicAndTextStyle"
+                android:textStyle="bold"
                 android:text="@string/category_engage"
                 android:textAllCaps="true"
                 />
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                style="@style/PicAndTextStyle"
                 android:text="@string/pic_engage"
                 />
 
@@ -138,17 +207,20 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
             android:src="@drawable/ic_arrow"
-            android:rotation="90"/>
+            style="@style/ArrowStyle"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/grow"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        android:onClick="stageGrow">
 
         <ImageView
             android:id="@+id/photo_grow"
@@ -163,15 +235,14 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                style="@style/PicAndTextStyle"
+                android:textStyle="bold"
                 android:text="@string/category_grow"
                 android:textAllCaps="true"
                 />
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                style="@style/PicAndTextStyle"
                 android:text="@string/pic_grow"
                 />
 
@@ -184,24 +255,25 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:src="@drawable/ic_arrow"
-            android:rotation="90"/>
+            style="@style/ArrowStyle"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/earn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@android:color/white">
 
         <ImageView
-            android:id="@+id/photo_earn"
             android:layout_width="96sp"
             android:layout_height="96sp"
             android:scaleType="centerCrop"
-            android:src="@drawable/earn"/>
+            android:src="@drawable/earn"
+            android:onClick="stageEarn"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -209,16 +281,63 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                style="@style/PicAndTextStyle"
+                android:textStyle="bold"
                 android:text="@string/category_earn"
                 android:textAllCaps="true"
                 />
 
             <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
+                style="@style/PicAndTextStyle"
                 android:text="@string/pic_earn"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:rotation="90"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        android:onClick="start_quiz">
+
+        <ImageView
+
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/quiz"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/PicAndTextStyle"
+                android:textStyle="bold"
+                android:text="Quiz"
+                android:textAllCaps="true"
                 />
 
         </LinearLayout>
@@ -227,53 +346,4 @@
 
 </LinearLayout>
 
-    <!--<ImageView
-        android:id="@+id/photo_develop"
-        android:layout_width="96sp"
-        android:layout_height="96sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/develop"/>
-
-    <ImageView
-        android:id="@+id/photo_launch"
-        android:layout_width="96sp"
-        android:layout_height="96sp"
-        android:layout_below="@id/photo_develop"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="36dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/launch"/>
-
-    <ImageView
-        android:id="@+id/photo_engage"
-        android:layout_width="96sp"
-        android:layout_height="96sp"
-        android:layout_below="@id/photo_launch"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="36dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/engage"/>
-
-    <ImageView
-        android:id="@+id/photo_grow"
-        android:layout_width="96sp"
-        android:layout_height="96sp"
-        android:layout_toRightOf="@id/photo_engage"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/grow"/>
-
-    <ImageView
-        android:id="@+id/photo_arrow"
-        android:layout_width="24sp"
-        android:layout_height="24sp"
-        android:layout_alignLeft="@+id/photo_develop"
-        android:layout_alignStart="@+id/photo_develop"
-
-        android:layout_below="@+id/photo_develop"
-        android:rotation="90"
-        android:src="@drawable/ic_arrow" />-->
+</ScrollView>

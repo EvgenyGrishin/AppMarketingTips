@@ -1,9 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:padding="8dp"
     tools:context="com.egrishin.appmarketingtips.Quiz">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quizQuestion1"/>
+
+        <RadioGroup
+            android:id="@+id/q1_radio_button_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/q1a1_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q1a1"
+                />
+            <RadioButton
+                android:id="@+id/q1a2_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q1a2"
+                />
+            <RadioButton
+                android:id="@+id/q1a3_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q1a3"
+                />
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quizQuestion2"/>
+
+        <RadioGroup
+            android:id="@+id/q2_radio_button_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/q2a1_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2a1"
+                />
+            <RadioButton
+                android:id="@+id/q2a2_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2a2"
+                />
+            <RadioButton
+                android:id="@+id/q2a3_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/q2a3"
+                />
+
+            <TextView
+                android:id="@+id/q1textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit answer"
+                android:onClick="displayCheckedButtonId_q1"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

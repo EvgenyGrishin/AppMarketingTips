@@ -122,4 +122,18 @@
 
     <string name="pic_earn">Monetize your app and earn more revenue</string>
 
+    <string name="completed">Completed</string>
+
+    /* Quiz questions */
+
+    <string name="quizQuestion1">What is #1 thing to do, when you developed an app and plan to publish it in Google Play?</string>
+    <string name="q1a1">Use the right monetization model.</string>
+    <string name="q1a2">Get positive reviews from sites and blogs.</string>
+    <string name="q1a3">Check the app via Google Developer’s checklist.</string>
+
+    <string name="quizQuestion2">You feel ready to launch your app, but you already keep in mind some changes you wish to implement in newer versions. Some of these new features will require extra app permissions, compared to the current version. What will you do with app permissions in the current, ready for launch version?</string>
+    <string name="q2a1">Add extra permissions to the current version. Anyway you’ll need them.</string>
+    <string name="q2a2">You’ll ask the user to accept all permissions, closing unrequired with each version.</string>
+    <string name="q2a3">You’ll leave just a few required for the current release permissions.</string>
+
 </resources>

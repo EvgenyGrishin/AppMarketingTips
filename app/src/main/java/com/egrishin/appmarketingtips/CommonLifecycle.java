@@ -2,6 +2,8 @@ package com.egrishin.appmarketingtips;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 public class CommonLifecycle extends AppCompatActivity {
 
@@ -10,4 +12,7 @@ public class CommonLifecycle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common_lifecycle);
     }
+
+
 }
+
